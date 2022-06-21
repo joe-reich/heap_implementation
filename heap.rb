@@ -1,6 +1,6 @@
 class Heap
   def initialize
-    # the math is simpler if we don't ignore the 0th place
+    # the math is simpler if we ignore the 0th place
     @nodes = [nil]
   end
 
