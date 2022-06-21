@@ -25,6 +25,14 @@ class Heap
     max_value
   end
 
+  def replace(int)
+    max_value = nodes[1]
+    nodes[1] = int
+    sift_down_root_value
+
+    max_value
+  end
+
   private
 
   def sift_up_last_value
